@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcours Académique</title>
+    <link rel="stylesheet" href="css/parcours.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="mp3_mp4_project/background-animation.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+    </div>
+        
+    <a href="index.html" class="back-home-btn" onclick="window.close(); return false;">
+        <i class="fas fa-arrow-left"></i> 
+    </a>
+    <div class="content">
+        <h1>Parcours Académique</h1>
+
+        <div class="education">
+            
+            <div class="degree" onclick="showDiploma('bac')">
+                <h2>Baccalauréat - Spécialité Mathématiques</h2>
+                <p>Institution: Lycée Sadok Feki (2020-2021)</p>
+            </div>
+
+            
+            <div class="degree" onclick="showDiploma('licence')">
+                <h2>Licence en Ingénierie des Systèmes Informatiques - IOT</h2>
+                <p>2022-2024</p>
+            </div>
+
+            
+            <div class="diploma" id="bac">
+                <img src="mp3_mp4_project/bac.jpg" alt="Baccalauréat Diplôme">
+            </div>
+            <div class="diploma" id="licence">
+                <img src="mp3_mp4_project/diplome.jpg" alt="Licence Diplôme">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/parcours.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Témoignages sur l'IIT</title>
+    <link rel="stylesheet" href="css/temoignage.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+   
+    <video autoplay muted loop id="background-video">
+        <source src="mp3_mp4_project/background-animation.mp4" type="video/mp4">
+    </video>
+    
+    <a href="index.html" class="back-home-btn" onclick="window.close(); return false;">
+        <i class="fas fa-arrow-left"></i> <!-- Icône de flèche -->
+    </a>    
+
+ 
+    <main>
+        <div class="sidebar_left"></div>
+        <div class="testimony-container">
+            <header>
+                <h1>Témoignage sur l'IIT</h1>
+                
+            </header>
+            <article>
+                <section id="opinion">
+                    
+                    <p>
+                        L'IIT offre une formation d'excellente qualité, alliant théorie et pratique, ce qui nous prépare efficacement aux défis du monde professionnel. 
+                        Les enseignants sont compétents et passionnés, et les infrastructures modernes facilitent l'apprentissage. 
+                        L'université propose également de nombreuses opportunités de stages et de collaborations avec des entreprises, renforçant ainsi notre expérience et notre réseau professionnel. 
+                        En somme, l'IIT est une institution qui forme des étudiants prêts à réussir dans un environnement technologique en constante évolution.
+                    </p>
+                </section>
+
+                <!--blaset win ajouti comment -->
+                <section id="comment-section">
+                    <p>Voici mon opinion sur l'IIT, et vous pouvez partager la vôtre !</p>
+                    <textarea id="comment-input" placeholder="Écrivez votre commentaire ici..."></textarea>
+                    <button id="submit-comment">envoyer</button>
+                </section>
+
+                
+                <section id="comments">
+                    
+                    <div id="comments-list">
+                        
+                    </div>
+                </section>
+            </article>
+        </div>
+        <aside class="sidebar_right"></aside>
+    </main>
+
+    <script src="js/temoignage.js"></script>
+</body>
+</html>

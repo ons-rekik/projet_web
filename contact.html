@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Contact</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+
+<video autoplay muted loop id="background-video">
+    <source src="mp3_mp4_project/background-animation.mp4" type="video/mp4">
+    
+</video>
+
+
+<div class="contact-form-wrapper">
+    <div class="contact-form">
+        <h2>Envoyez-moi un message</h2>
+        <form id="contact-form">
+            <label for="email">Votre Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Votre Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+</div>
+
+
+<a href="index.html" class="back-home-btn" onclick="window.close(); return false;">
+    <i class="fas fa-arrow-left"></i> 
+</a>
+
+
+<script src="js/contact_script.js"></script>
+
+</body>
+</html>

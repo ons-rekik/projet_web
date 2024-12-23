@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Informatique</title>
+    <link rel="stylesheet" href="css/quizz.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <video autoplay muted loop id="background-video">
+        <source src="mp3_mp4_project/background-animation.mp4" type="video/mp4">
+    </video>
+
+    
+    <a href="index.html" class="back-home-btn" onclick="window.close(); return false;">
+        <i class="fas fa-arrow-left"></i> 
+    </a>
+
+    
+    <main>
+        <div class="sidebar_left"></div>
+        <div class="quiz-container">
+            <header>
+                <h1>QUIZ</h1>
+                <p>Testez vos connaissances dans les domaines de l'informatique, du développement web, et de l'IoT.</p>
+            </header>
+            <article id="question-box">
+                <form id="quiz-form">
+                    
+                    <div class="question" data-correct="A">
+                        <p>1. Quelle balise HTML est utilisée pour insérer une image ?</p>
+                        <ul>
+                            <li><input type="radio" name="q1" value="A"> &lt;img&gt;</li>
+                            <li><input type="radio" name="q1" value="B"> &lt;picture&gt;</li>
+                            <li><input type="radio" name="q1" value="C"> &lt;src&gt;</li>
+                        </ul>
+                    </div>
+
+                    
+                    <div class="question" data-correct="C">
+                        <p>2. Complétez cette ligne : Le protocole __ est utilisé pour sécuriser les communications web.</p>
+                        <ul>
+                            <li><input type="radio" name="q2" value="A"> HTTP</li>
+                            <li><input type="radio" name="q2" value="B"> FTP</li>
+                            <li><input type="radio" name="q2" value="C"> HTTPS</li>
+                        </ul>
+                    </div>
+
+                    
+                    <div class="question multi-answer" data-correct="A,C">
+                        <p>3. Cochez les protocoles qui sont couramment utilisés pour l'IoT :</p>
+                        <ul>
+                            <li><input type="checkbox" name="q3" value="A"> MQTT</li>
+                            <li><input type="checkbox" name="q3" value="B"> FTP</li>
+                            <li><input type="checkbox" name="q3" value="C"> CoAP</li>
+                            <li><input type="checkbox" name="q3" value="D"> DNS</li>
+                        </ul>
+                    </div>
+
+                    
+                    <div class="question" data-correct="B">
+                        <p>4. Quel est le rôle principal de la balise &lt;thead&gt; dans un tableau HTML ?</p>
+                        <select name="q4">
+                            <option value="">Sélectionnez une réponse</option>
+                            <option value="A">Définir les lignes du tableau</option>
+                            <option value="B">Définir l'en-tête du tableau</option>
+                            <option value="C">Appliquer des styles CSS</option>
+                        </select>
+                    </div>
+
+                    
+                    <div class="question" data-correct="B">
+                        <p>5. Quelle est la fréquence typique d’un microcontrôleur ESP32 ?</p>
+                        <ul>
+                            <li><input type="radio" name="q5" value="A"> 16 MHz</li>
+                            <li><input type="radio" name="q5" value="B"> 240 MHz</li>
+                            <li><input type="radio" name="q5" value="C"> 1 GHz</li>
+                        </ul>
+                    </div>
+
+                    
+                    <div class="question" data-correct="42">
+                        <p>6. Quel est le résultat du calcul suivant dans un programme Python ?  
+                        <code>len([x for x in range(50) if x % 2 == 0])</code></p>
+                        <ul>
+                            <li><input type="radio" name="q6" value="42"> 42</li>
+                            <li><input type="radio" name="q6" value="24"> 24</li>
+                            <li><input type="radio" name="q6" value="50"> 50</li>
+                        </ul>
+                    </div>
+
+                    
+                    <div class="question" data-correct="C">
+                        <p>7. Dans une carte Arduino, quelle broche est utilisée pour le PWM ?</p>
+                        <table>
+                            <tr>
+                                <th>Broche</th>
+                                <th>Fonction</th>
+                            </tr>
+                            <tr>
+                                <td>Pin 13</td>
+                                <td>Sortie numérique</td>
+                            </tr>
+                            <tr>
+                                <td>Pin A0</td>
+                                <td>Entrée analogique</td>
+                            </tr>
+                            <tr>
+                                <td>Pin 9</td>
+                                <td>PWM</td>
+                            </tr>
+                        </table>
+                        <select name="q7">
+                            <option value="">Sélectionnez une réponse</option>
+                            <option value="A">Pin 13</option>
+                            <option value="B">Pin A0</option>
+                            <option value="C">Pin 9</option>
+                        </select>
+                    </div>
+
+                    
+                    <div class="question" data-correct="C">
+                        <p>8. En CSS, que signifie "em" ?</p>
+                        <ul>
+                            <li><input type="radio" name="q8" value="A"> Une unité de pixels fixe</li>
+                            <li><input type="radio" name="q8" value="B"> Une propriété de couleur</li>
+                            <li><input type="radio" name="q8" value="C"> Une unité relative à la taille de la police</li>
+                        </ul>
+                    </div>
+
+                    
+                    <div class="question" data-correct="A">
+                        <p>9. Dans un fichier HTML, quel attribut est obligatoire pour les images ?</p>
+                        <ul>
+                            <li><input type="radio" name="q9" value="A"> alt</li>
+                            <li><input type="radio" name="q9" value="B"> class</li>
+                            <li><input type="radio" name="q9" value="C"> srcset</li>
+                        </ul>
+                    </div>
+
+    
+
+
+                    
+                    <div class="question" data-correct="C">
+                        <p>11. Quel est le rôle principal du protocole DNS ?</p>
+                        <select name="q11">
+                            <option value="">Sélectionnez une réponse</option>
+                            <option value="A">Envoyer des e-mails</option>
+                            <option value="B">Sécuriser les communications</option>
+                            <option value="C">Traduire les noms de domaine en adresses IP</option>
+                        </select>
+                    </div>
+
+                    
+                    <div class="question" data-correct="B">
+                        <p>12. Quel est le rôle du module ESP8266 dans un projet IoT ?</p>
+                        <ul>
+                            <li><input type="radio" name="q12" value="A"> Traitement des données</li>
+                            <li><input type="radio" name="q12" value="B"> Connexion Wi-Fi</li>
+                            <li><input type="radio" name="q12" value="C"> Stockage de fichiers</li>
+                        </ul>
+                    </div>
+                    <button type="button" onclick="validateAndNextQuestion()">Valider et Suivant</button>
+
+
+                    
+                    
+                </form>
+            </article>
+            <div id="score-container" style="display: none;">
+                <h2>Votre score est : <span id="score"></span></h2>
+            </div>
+        
+        <aside class="sidebar_right"></aside>
+    </main>
+
+    
+    <script src="js/quizz_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil - Rekik Ons</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    
+    <video autoplay muted loop id="background-video">
+        <source src="mp3_mp4_project/background-animation.mp4" type="video/mp4">
+    
+    </video>
+
+    
+    <div class="container">
+        <h1>Bienvenue sur mon portfolio</h1>
+        <p>Bonjour, je m'appelle <strong>Rekik Ons</strong>, étudiante en première année de génie informatique à l'<a href="https://iit.tn/" target="_self" class="iit-link">IIT</a>.</p>
+    </div>
+    <div class="profile-container">
+        <img src="mp3_mp4_project/photo-personnelle.png" alt="Rekik Ons" class="profile-photo">
+    </div>
+
+    
+    <div class="menu-icon">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+    </div>
+
+    
+    <div class="menu-dropdown">
+        <a href="parcours.html" target="_blank">Parcours Académique</a>
+        <a href="competences.html" target="_blank">Compétences</a>
+        <a href="projets.html" target="_blank">Projets Réalisés</a>
+        <a href="passions.html" target="_blank">Passions</a>
+        <a href="quizz.html" target="_blank">Quizz</a>
+        <a href="contact.html" target="_blank">Contact</a>
+        <a href="témoignage.html" target="_blank">Témoignage sur l'IIT</a>
+    </div>
+
+    
+    <div class="social-icons">
+        <a  class="social-icon">
+            <i class="fas fa-phone-alt"></i> 
+            <div class="tooltip">+21626104741</div>
+        </a>
+        <a href="contact.html" target="_blank" class="social-icon">
+            <i class="fas fa-envelope"></i> 
+            <div class="tooltip">ons.rekik8@gmail.com</div>
+        </a>
+        <a href="https://www.facebook.com/ons.anousa.5015?mibextid=ZbWKwL" target="_blank" class="social-icon">
+            <i class="fab fa-facebook"></i>
+            <div class="tooltip">Ons Rekik</div>
+        </a>
+        <a href="https://www.instagram.com/ons_rekik4" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i> 
+            <div class="tooltip">@ons_rekik4</div>
+        </a>
+        <a href="https://www.linkedin.com/in/ons-rekik-76222626a" target="_blank" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+            <div class="tooltip">Ons Rekik</div>
+        </a>
+    </div>
+
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const menuDropdown = document.querySelector('.menu-dropdown');
+
+        menuIcon.addEventListener('click', () => {
+            menuDropdown.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
